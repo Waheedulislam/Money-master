@@ -18,28 +18,43 @@
 //     finalBalance.innerText = balanceTotal;
 
 // })
+
+// cost calkulat
 document.getElementById('calculate-button').addEventListener('click', function () {
 
-    const myMunthlyIncome = calculataion('monthly-income').value;
-    const foodCost = calculataion('food-cost').value;
-    const rentCost = calculataion('rent-cost').value;
-    const clothesCost = calculataion('clothes-cost').value;
+    const myMunthlyIncome = costCalculataion('monthly-income').value;
+    const foodCost = costCalculataion('food-cost').value;
+    const rentCost = costCalculataion('rent-cost').value;
+    const clothesCost = costCalculataion('clothes-cost').value;
 
     const totalCost = parseFloat(foodCost) + parseFloat(rentCost) + parseFloat(clothesCost);
 
-    const total = calculataion('total-cost');
+    const total = costCalculataion('total-cost');
     total.innerText = totalCost;
 
     const balanceTotal = parseFloat(myMunthlyIncome) - parseFloat(totalCost);
     console.log(balanceTotal);
 
 
-    const finalBalance = calculataion('final-balance');
+    const finalBalance = costCalculataion('final-balance');
     finalBalance.innerText = balanceTotal;
 
 })
 
 
-function calculataion(calkulat) {
+function costCalculataion(calkulat) {
     return document.getElementById(calkulat);
 }
+
+// saving calculation
+document.getElementById("saving-bnt").addEventListener('click', function () {
+
+    const savingInput = document.getElementById('saving-input').value;
+
+    const myMunthlyIncome = document.getElementById('monthly-income').value;
+
+    const savingCalculation = parseFloat(myMunthlyIncome * savingInput / 100);
+
+    const savingAmmount = document.getElementById('saving-ammount');
+    savingAmmount.innerText = savingCalculation;
+})
