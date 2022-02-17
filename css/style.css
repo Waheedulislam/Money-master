@@ -2,12 +2,12 @@
     color: rgba(3, 3, 75, 0.986);
 }
 #img-width{
-    width:620px;
+    width:750px;
     height: 715px;
-    /* padding-right: 25px; */
 }
 #border-with{
     background-color:#f0f0f0fa;
+    width:349px;
 }
 /* button width  */
 .button-width{
