@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Money saving & Expenses</title>
     <!-- custom css link -->
     <link rel="stylesheet" href="./css/style.css">
     <!-- bootstrap css link  -->
@@ -14,12 +14,64 @@
 </head>
 
 <body>
-    <header class="container text-center">
-        <h1 class="h1 fst-normal text-center pt-5">Money saving & Expenses </h1>
-    </header>
-    <main>
-        <section>
 
+    <main>
+        <header class="container text-center">
+            <h1 id="h1-color" class="h1 fst-normal text-center pt-5">Money saving & Expenses <i
+                    class="fa-solid fa-sack-dollar"></i> </h1>
+        </header>
+        <section class="container pt-3">
+            <hr>
+            <div class="d-flex ">
+                <div class="flex-sm-colom fle-lg-row">
+                    <img id="img-width" src="./photo/tk.jpg" alt="">
+                </div>
+
+                <div id="border-with" class="pt-5 border flex-sm-colom fle-lg-row">
+                    <h2 class="text-center">Incom</h2>
+                    <div class="text-center pt-3 pb-3">
+                        <span>Income:</span>
+                        <input type="text">
+                    </div>
+                    <h3 class="text-center p-2">Expenses</h3>
+                    <div class="text-center pt-3 pb-3">
+                        <span>Food:</span>
+                        <input type="text">
+                    </div>
+                    <div class="text-center pt-3 pb-3">
+                        <span>Rent:</span>
+                        <input type="text">
+                    </div>
+                    <div class="text-center pt-3 pb-3 pr-4 ">
+                        <span>Clothes:</span>
+                        <input type="text">
+                    </div>
+                    <div class="text-center pt-2">
+                        <button type="button" class="btn btn-primary text-center ">Calculate</button>
+                    </div>
+                    <div>
+                        <h4 class="text-center pt-3">Total Expenses: <span>550</span> </h4>
+                    </div>
+                    <div>
+                        <h4 class="text-center pt-3">Balance: <span>550</span> </h4>
+                    </div>
+
+                    <div class="text-center">
+                        <span>Save: <input type="text"> <span>%</span> <button type="button"
+                                class="btn btn-primary button-width ">Save</button>
+                        </span>
+                    </div>
+
+                    <div>
+                        <h5 class="text-center pt-3">Saving Amount: <span>2000</span> </h5>
+                    </div>
+
+                    <div>
+                        <h5 class="text-center pt-3">Remaining Balance: <span>550</span> </h4>
+                    </div>
+
+                </div>
+            </div>
         </section>
     </main>
 

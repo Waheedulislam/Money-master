@@ -1,3 +1,16 @@
-h1{
-    color: #000;
+#h1-color{
+    color: rgba(3, 3, 75, 0.986);
+}
+#img-width{
+    width:620px;
+    height: 715px;
+    padding-right: 25px;
+}
+#border-with{
+    padding-left: 5px;
+    width: 600px;
+    background-color:#f0f0f0fa;
+}
+.button-width{
+    width: 70px;
 }
