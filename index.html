@@ -17,43 +17,44 @@
 
     <main>
         <header class="container text-center">
-            <h1 id="h1-color" class="h1 fst-normal text-center pt-5">Money saving & Expenses <i
+            <h1 id="h1-color" class=" fst-normal text-center pt-5">Money saving & Expenses <i
                     class="fa-solid fa-sack-dollar"></i> </h1>
         </header>
         <section class="container pt-3">
             <hr>
-            <div class="d-flex row">
-                <div class="col-sm-8  col-md-7 pb-3">
-                    <img id="img-width" src="./photo/tk.jpg" alt="">
+            <div class="total-flex ">
+                <div>
+                    <img class="img-fluid" id="img-width" src="./photo/tk.jpg" alt="">
                 </div>
 
-                <div id="border-with" class=" border col-sm-4 col-md-5">
-                    <h2 class="text-center">Incom</h2>
+                <div id="border-with" class=" border ">
+                    <h2 class="text-center">Income</h2>
                     <div class="text-center pt-3 pb-3">
                         <span>Income:</span>
-                        <input type="text">
+                        <input id="monthly-income" type="text">
                     </div>
                     <h3 class="text-center p-2">Expenses</h3>
                     <div class="text-center pt-3 pb-3">
                         <span>Food:</span>
-                        <input type="text">
+                        <input id="food-cost" type="text">
                     </div>
                     <div class="text-center pt-3 pb-3">
                         <span>Rent:</span>
-                        <input type="text">
+                        <input id="rent-cost" type="text">
                     </div>
                     <div class="text-center pt-3 pb-3 pr-4 ">
                         <span>Clothes:</span>
-                        <input type="text">
+                        <input id="clothes-cost" type="text">
                     </div>
                     <div class="text-center pt-2">
-                        <button type="button" class="btn btn-primary text-center ">Calculate</button>
+                        <button id="calculate-button" type="button"
+                            class="btn btn-primary text-center ">Calculate</button>
                     </div>
                     <div>
-                        <h4 class="text-center pt-3">Total Expenses: <span>500</span> </h4>
+                        <h4 class="text-center pt-3">Total Expenses: <span id="total-cost">00</span> </h4>
                     </div>
                     <div>
-                        <h4 class="text-center pt-3">Balance: <span>550</span> </h4>
+                        <h4 class="text-center pt-3">Balance: <span id="final-balance">00</span> </h4>
                     </div>
 
                     <div class="text-center">
